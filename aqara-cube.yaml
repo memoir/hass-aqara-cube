@@ -444,11 +444,11 @@ action:
           condition: or
           conditions:
             - "{{ flip_degrees == 90 and activated_face == 1 and any_to_one}}"
-            - "{{ flip_degrees == 180 and activated_face == 1 }}"
+            - "{{ flip_degrees == 180 and activated_face == 1 and any_to_one}}"
         sequence: !input "cube_any_to_one"
       # ---------------------------- Flip 90 to side 1 ----------------------------
       - conditions:
-          - "{{ flip_degrees == 90 and activated_face == 1 }}"
+          - "{{ flip_degrees == 90 and activated_face == 1 and not any_to_one}}"
         sequence:
           - choose:
               - conditions: "{{ from_face == 2 }}"
@@ -526,7 +526,7 @@ action:
                 sequence: !input "five_to_six"
       # ---------------------------- Flip 180 to side x ----------------------------
       - conditions:
-          - "{{ value == flip180 + activated_face - 1 }}"
+          - "{{ (value == flip180 + activated_face - 1) and not any_to_one}}"
         sequence:
           - choose:
               - conditions: "{{ activated_face == 1 }}"
