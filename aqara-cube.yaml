@@ -1,5 +1,5 @@
 blueprint:
-  name: Aqara Magic Cube
+  name: Aqara Magic Cube 2
   description: Control anything using Aqara Magic Cube.
   domain: automation
   input:
