@@ -68,9 +68,16 @@ blueprint:
         action: {}
     any_to_one:
       name: From any side to side 1
-      description: Action to run when cube goes any side to side 1
+      description: Actions to run when knocking cube regardless of the side.
         This cancels all specific 'to side 1' functions
         e.g From side 2 to side 1
+      default: false
+      selector:
+        boolean: {}
+    cube_any_to_one:
+      name: Turn cube from any side to side 1
+      description: Action to run when cube goes from any side to side 1.
+        This only works if 'From any side to side 1' is toggled
       default: []
       selector:
         action: {}
@@ -436,9 +443,9 @@ action:
       - conditions:
           condition: or
           conditions:
-            - "{{ flip_degrees == 90 and activated_face == 1 }}"
+            - "{{ flip_degrees == 90 and activated_face == 1 and any_to_one}}"
             - "{{ flip_degrees == 180 and activated_face == 1 }}"
-        sequence: !input "any_to_one"
+        sequence: !input "cube_any_to_one"
       # ---------------------------- Flip 90 to side 1 ----------------------------
       - conditions:
           - "{{ flip_degrees == 90 and activated_face == 1 }}"
