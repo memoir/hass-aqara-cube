@@ -80,7 +80,7 @@ blueprint:
     any_to_one:
       name: From any side to side 1
       description:
-        Actions to run when knocking cube regardless of the side. This
+        Action to run when cube goes from any other side to side 1. This
         cancels all specific 'to side 1' functions e.g From side 6 to side 1
       default: false
       selector:
@@ -88,7 +88,7 @@ blueprint:
     cube_any_to_one:
       name: Turn cube from any side to side 1
       description:
-        Action to run when cube goes from any side to side 1. This only
+        Action to run when cube goes from any other side to side 1. This only
         works if 'From any side to side 1' is toggled
       default: []
       selector:
@@ -96,7 +96,7 @@ blueprint:
     any_to_two:
       name: From any side to side 2
       description:
-        Actions to run when knocking cube regardless of the side. This
+        Action to run when cube goes from any other side to side 2. This
         cancels all specific 'to side 2' functions e.g From side 1 to side 2
       default: false
       selector:
@@ -104,7 +104,7 @@ blueprint:
     cube_any_to_two:
       name: Turn cube from any side to side 2
       description:
-        Action to run when cube goes from any side to side 2. This only
+        Action to run when cube goes from any other side to side 2. This only
         works if 'From any side to side 2' is toggled
       default: []
       selector:
@@ -112,7 +112,7 @@ blueprint:
     any_to_three:
       name: From any side to side 3
       description:
-        Actions to run when knocking cube regardless of the side. This
+        Action to run when cube goes from any other side to side 3. This
         cancels all specific 'to side 3' functions e.g From side 2 to side 3
       default: false
       selector:
@@ -120,7 +120,7 @@ blueprint:
     cube_any_to_three:
       name: Turn cube from any side to side 3
       description:
-        Action to run when cube goes from any side to side 3. This only
+        Action to run when cube goes from any other side to side 3. This only
         works if 'From any side to side 3' is toggled
       default: []
       selector:
@@ -128,7 +128,7 @@ blueprint:
     any_to_four:
       name: From any side to side 4
       description:
-        Actions to run when knocking cube regardless of the side. This
+        Action to run when cube goes from any other side to side 4. This
         cancels all specific 'to side 4' functions e.g From side 3 to side 4
       default: false
       selector:
@@ -136,7 +136,7 @@ blueprint:
     cube_any_to_four:
       name: Turn cube from any side to side 4
       description:
-        Action to run when cube goes from any side to side 4. This only
+        Action to run when cube goes from any other side to side 4. This only
         works if 'From any side to side 4' is toggled
       default: []
       selector:
@@ -144,7 +144,7 @@ blueprint:
     any_to_five:
       name: From any side to side 5
       description:
-        Actions to run when knocking cube regardless of the side. This
+        Action to run when cube goes from any other side to side 5. This
         cancels all specific 'to side 5' functions e.g From side 4 to side 5
       default: false
       selector:
@@ -152,7 +152,7 @@ blueprint:
     cube_any_to_five:
       name: Turn cube from any side to side 5
       description:
-        Action to run when cube goes from any side to side 5. This only
+        Action to run when cube goes from any other side to side 6. This only
         works if 'From any side to side 5' is toggled
       default: []
       selector:
@@ -160,7 +160,7 @@ blueprint:
     any_to_six:
       name: From any side to side 6
       description:
-        Actions to run when knocking cube regardless of the side. This
+        Action to run when cube goes from any other side to side 6. This
         cancels all specific 'to side 6' functions e.g From side 5 to side 6
       default: false
       selector:
@@ -168,7 +168,7 @@ blueprint:
     cube_any_to_six:
       name: Turn cube from any side to side 6
       description:
-        Action to run when cube goes from any side to side 6. This only
+        Action to run when cube goes from any other side to side 6. This only
         works if 'From any side to side 6' is toggled
       default: []
       selector:
@@ -534,32 +534,32 @@ action:
       - conditions:
           condition: or
           conditions:
-            - "{{ flip_degrees == 90 and activated_face == 2 and any_to_one}}"
-            - "{{ flip_degrees == 180 and activated_face == 2 and any_to_one}}"
+            - "{{ flip_degrees == 90 and activated_face == 2 and any_to_two}}"
+            - "{{ flip_degrees == 180 and activated_face == 2 and any_to_two}}"
         sequence: !input "cube_any_to_two"
       - conditions:
           condition: or
           conditions:
-            - "{{ flip_degrees == 90 and activated_face == 3 and any_to_one}}"
-            - "{{ flip_degrees == 180 and activated_face == 3 and any_to_one}}"
+            - "{{ flip_degrees == 90 and activated_face == 3 and any_to_three}}"
+            - "{{ flip_degrees == 180 and activated_face == 3 and any_to_three}}"
         sequence: !input "cube_any_to_three"
       - conditions:
           condition: or
           conditions:
-            - "{{ flip_degrees == 90 and activated_face == 4 and any_to_one}}"
-            - "{{ flip_degrees == 180 and activated_face == 4 and any_to_one}}"
+            - "{{ flip_degrees == 90 and activated_face == 4 and any_to_four}}"
+            - "{{ flip_degrees == 180 and activated_face == 4 and any_to_four}}"
         sequence: !input "cube_any_to_four"
       - conditions:
           condition: or
           conditions:
-            - "{{ flip_degrees == 90 and activated_face == 5 and any_to_one}}"
-            - "{{ flip_degrees == 180 and activated_face == 5 and any_to_one}}"
+            - "{{ flip_degrees == 90 and activated_face == 5 and any_to_five}}"
+            - "{{ flip_degrees == 180 and activated_face == 5 and any_to_five}}"
         sequence: !input "cube_any_to_five"
       - conditions:
           condition: or
           conditions:
-            - "{{ flip_degrees == 90 and activated_face == 6 and any_to_one}}"
-            - "{{ flip_degrees == 180 and activated_face == 6 and any_to_one}}"
+            - "{{ flip_degrees == 90 and activated_face == 6 and any_to_six}}"
+            - "{{ flip_degrees == 180 and activated_face == 6 and any_to_six}}"
         sequence: !input "cube_any_to_six"
       - conditions:
           - "{{ flip_degrees == 90 and activated_face == 1}}"
