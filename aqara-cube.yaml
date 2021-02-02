@@ -12,72 +12,164 @@ blueprint:
           manufacturer: LUMI
     flip_90:
       name: Flip 90 degrees
-      description: Actions to run when cube flips 90 degrees.
-        This cancels all specific 90 degrees functions.
-        e.g From side 1 to side 2 will be the same as from side 6 to side 2
+      description:
+        Actions to run when cube flips 90 degrees. This cancels all specific
+        90 degrees functions. e.g From side 1 to side 2 will be the same as from side
+        6 to side 2
       default: false
       selector:
         boolean: {}
     cube_flip_90:
       name: Flip cube 90 degrees
-      description: Action to run when cube flips 90 degrees. This only works if 'Flip 90 degrees' is toggled
+      description:
+        Action to run when cube flips 90 degrees. This only works if 'Flip
+        90 degrees' is toggled
       default: []
       selector:
         action: {}
     flip_180:
       name: Flip 180 degrees
-      description: Actions to run when cube flips 180 degrees.
-        This cancels all specific 180 degrees functions
-        e.g From side 1 to side 4 will be the same as from side 5 to side 2
+      description:
+        Actions to run when cube flips 180 degrees. This cancels all specific
+        180 degrees functions e.g From side 1 to side 4 will be the same as from side
+        5 to side 2
       default: false
       selector:
         boolean: {}
     cube_flip_180:
       name: Flip cube 180 degrees
-      description: Action to run when cube flips 180 degrees. This only works if 'Flip 180 degrees' is toggled
+      description:
+        Action to run when cube flips 180 degrees. This only works if 'Flip
+        180 degrees' is toggled
       default: []
       selector:
         action: {}
     slide_any_side:
       name: Slide any side
-      description: Actions to run when cube slides on any side.
-        This cancels all specific 'slide' functions
-        e.g Slide on side 1 will be the same as slide on side 2
+      description:
+        Actions to run when cube slides on any side. This cancels all specific
+        'slide' functions e.g Slide on side 1 will be the same as slide on side 2
       default: false
       selector:
         boolean: {}
     cube_slide_any:
       name: Slide cube on any side
-      description: Action to run when cube slides on any slide. This only works if 'Slide any side' is toggled
+      description:
+        Action to run when cube slides on any slide. This only works if
+        'Slide any side' is toggled
       default: []
       selector:
         action: {}
     knock_any_side:
       name: Knock on any side
-      description: Actions to run when knocking cube regardless of the side.
-        This cancels all specific 'knock' functions
-        e.g Knock on side 1 will be the same as knocking side 2
+      description:
+        Actions to run when knocking cube regardless of the side. This
+        cancels all specific 'knock' functions e.g Knock on side 1 will be the same
+        as knocking side 2
       default: false
       selector:
         boolean: {}
     cube_knock_any:
       name: Knock cube on any side
-      description: Action to run when knocking cube on any side. This only works if 'Knock on any side' is toggled
+      description:
+        Action to run when knocking cube on any side. This only works if
+        'Knock on any side' is toggled
       default: []
       selector:
         action: {}
     any_to_one:
       name: From any side to side 1
-      description: Actions to run when knocking cube regardless of the side.
-        This cancels all specific 'to side 1' functions
-        e.g From side 2 to side 1
+      description:
+        Actions to run when knocking cube regardless of the side. This
+        cancels all specific 'to side 1' functions e.g From side 6 to side 1
       default: false
       selector:
         boolean: {}
     cube_any_to_one:
       name: Turn cube from any side to side 1
-      description: Action to run when cube goes from any side to side 1.
-        This only works if 'From any side to side 1' is toggled
+      description:
+        Action to run when cube goes from any side to side 1. This only
+        works if 'From any side to side 1' is toggled
+      default: []
+      selector:
+        action: {}
+    any_to_two:
+      name: From any side to side 2
+      description:
+        Actions to run when knocking cube regardless of the side. This
+        cancels all specific 'to side 2' functions e.g From side 1 to side 2
+      default: false
+      selector:
+        boolean: {}
+    cube_any_to_two:
+      name: Turn cube from any side to side 2
+      description:
+        Action to run when cube goes from any side to side 2. This only
+        works if 'From any side to side 2' is toggled
+      default: []
+      selector:
+        action: {}
+    any_to_three:
+      name: From any side to side 3
+      description:
+        Actions to run when knocking cube regardless of the side. This
+        cancels all specific 'to side 3' functions e.g From side 2 to side 3
+      default: false
+      selector:
+        boolean: {}
+    cube_any_to_three:
+      name: Turn cube from any side to side 3
+      description:
+        Action to run when cube goes from any side to side 3. This only
+        works if 'From any side to side 3' is toggled
+      default: []
+      selector:
+        action: {}
+    any_to_four:
+      name: From any side to side 4
+      description:
+        Actions to run when knocking cube regardless of the side. This
+        cancels all specific 'to side 4' functions e.g From side 3 to side 4
+      default: false
+      selector:
+        boolean: {}
+    cube_any_to_four:
+      name: Turn cube from any side to side 4
+      description:
+        Action to run when cube goes from any side to side 4. This only
+        works if 'From any side to side 4' is toggled
+      default: []
+      selector:
+        action: {}
+    any_to_five:
+      name: From any side to side 5
+      description:
+        Actions to run when knocking cube regardless of the side. This
+        cancels all specific 'to side 5' functions e.g From side 4 to side 5
+      default: false
+      selector:
+        boolean: {}
+    cube_any_to_five:
+      name: Turn cube from any side to side 5
+      description:
+        Action to run when cube goes from any side to side 5. This only
+        works if 'From any side to side 5' is toggled
+      default: []
+      selector:
+        action: {}
+    any_to_six:
+      name: From any side to side 6
+      description:
+        Actions to run when knocking cube regardless of the side. This
+        cancels all specific 'to side 6' functions e.g From side 5 to side 6
+      default: false
+      selector:
+        boolean: {}
+    cube_any_to_six:
+      name: Turn cube from any side to side 6
+      description:
+        Action to run when cube goes from any side to side 6. This only
+        works if 'From any side to side 6' is toggled
       default: []
       selector:
         action: {}
@@ -363,6 +455,7 @@ blueprint:
       default: []
       selector:
         action: {}
+  source_url: https://github.com/memoir/hass-aqara-cube/blob/master/aqara-cube.yaml
 mode: restart
 max_exceeded: silent
 trigger:
@@ -378,6 +471,12 @@ action:
       relative_degrees: "{{ trigger.event.data.args.relative_degrees }}"
       flip_90: !input "flip_90"
       flip_180: !input "flip_180"
+      any_to_one: !input "any_to_one"
+      any_to_two: !input "any_to_two"
+      any_to_three: !input "any_to_three"
+      any_to_four: !input "any_to_four"
+      any_to_five: !input "any_to_five"
+      any_to_six: !input "any_to_six"
       slide_any_side: !input "slide_any_side"
       knock_any_side: !input "knock_any_side"
       flip90: 64
@@ -386,69 +485,84 @@ action:
       knock: 512
       shake: 0
       drop: 3
-      activated_face: >
-        {% if command == "slide" or command == "knock" %}
-          {% if trigger.event.data.args.activated_face == 1 %} 1
-          {% elif trigger.event.data.args.activated_face == 2 %} 5
-          {% elif trigger.event.data.args.activated_face == 3 %} 6
-          {% elif trigger.event.data.args.activated_face == 4 %} 4
-          {% elif trigger.event.data.args.activated_face == 5 %} 2
-          {% elif trigger.event.data.args.activated_face == 6 %} 3
-          {% endif %}
-        {% elif command == 'flip' %}
-          {{ trigger.event.data.args.activated_face | int }}
-        {% endif %}
-      from_face: >
-        {% if command == "flip" and flip_degrees == 90 %}
-          {{ ((value - flip90 - (trigger.event.data.args.activated_face - 1)) / 8) + 1 | int }}
-        {% endif %}
+      activated_face:
+        "{% if command == \"slide\" or command == \"knock\" %}\n  {% if\
+        \ trigger.event.data.args.activated_face == 1 %} 1\n  {% elif trigger.event.data.args.activated_face\
+        \ == 2 %} 5\n  {% elif trigger.event.data.args.activated_face == 3 %} 6\n  {%\
+        \ elif trigger.event.data.args.activated_face == 4 %} 4\n  {% elif trigger.event.data.args.activated_face\
+        \ == 5 %} 2\n  {% elif trigger.event.data.args.activated_face == 6 %} 3\n  {%\
+        \ endif %}\n{% elif command == 'flip' %}\n  {{ trigger.event.data.args.activated_face\
+        \ | int }}\n{% endif %}\n"
+      from_face:
+        "{% if command == \"flip\" and flip_degrees == 90 %}\n  {{ ((value\
+        \ - flip90 - (trigger.event.data.args.activated_face - 1)) / 8) + 1 | int }}\n\
+        {% endif %}\n"
   - choose:
-      # ---------------------------- Rotate Right ----------------------------
       - conditions:
           - "{{ command == 'rotate_right' }}"
         sequence: !input "rotate_right"
-      # ---------------------------- Rotate Left ----------------------------
       - conditions:
           - "{{ command ==  'rotate_left' }}"
         sequence: !input "rotate_left"
-      # ---------------------------- Wake ----------------------------
       - conditions:
           - "{{ command == 'checkin' }}"
         sequence: !input "cube_wake"
-      # ---------------------------- Shake ----------------------------
       - conditions:
           - "{{ value == shake }}"
         sequence: !input "cube_shake"
-      # ---------------------------- Drop ----------------------------
       - conditions:
           - "{{ value == drop }}"
         sequence: !input "cube_drop"
-      # ---------------------------- Knock any side ----------------------------
       - conditions:
           - "{{ command == 'knock' and knock_any_side }}"
         sequence: !input "cube_knock_any"
-      # ---------------------------- Slide any side ----------------------------
       - conditions:
           - "{{ command == 'slide' and slide_any_side }}"
         sequence: !input "cube_slide_any"
-      # ---------------------------- Flip 90 to any side ----------------------------
       - conditions:
           - "{{ flip_degrees == 90 and flip_90 }}"
         sequence: !input "cube_flip_90"
-      # ---------------------------- Flip 180 to any side ----------------------------
       - conditions:
           - "{{ flip_degrees == 180 and flip_180 }}"
         sequence: !input "cube_flip_180"
-      # ---------------------------- Flip from any side to side 1 ----------------------------
       - conditions:
           condition: or
           conditions:
             - "{{ flip_degrees == 90 and activated_face == 1 and any_to_one}}"
             - "{{ flip_degrees == 180 and activated_face == 1 and any_to_one}}"
         sequence: !input "cube_any_to_one"
-      # ---------------------------- Flip 90 to side 1 ----------------------------
       - conditions:
-          - "{{ flip_degrees == 90 and activated_face == 1 and not any_to_one}}"
+          condition: or
+          conditions:
+            - "{{ flip_degrees == 90 and activated_face == 2 and any_to_one}}"
+            - "{{ flip_degrees == 180 and activated_face == 2 and any_to_one}}"
+        sequence: !input "cube_any_to_two"
+      - conditions:
+          condition: or
+          conditions:
+            - "{{ flip_degrees == 90 and activated_face == 3 and any_to_one}}"
+            - "{{ flip_degrees == 180 and activated_face == 3 and any_to_one}}"
+        sequence: !input "cube_any_to_three"
+      - conditions:
+          condition: or
+          conditions:
+            - "{{ flip_degrees == 90 and activated_face == 4 and any_to_one}}"
+            - "{{ flip_degrees == 180 and activated_face == 4 and any_to_one}}"
+        sequence: !input "cube_any_to_four"
+      - conditions:
+          condition: or
+          conditions:
+            - "{{ flip_degrees == 90 and activated_face == 5 and any_to_one}}"
+            - "{{ flip_degrees == 180 and activated_face == 5 and any_to_one}}"
+        sequence: !input "cube_any_to_five"
+      - conditions:
+          condition: or
+          conditions:
+            - "{{ flip_degrees == 90 and activated_face == 6 and any_to_one}}"
+            - "{{ flip_degrees == 180 and activated_face == 6 and any_to_one}}"
+        sequence: !input "cube_any_to_six"
+      - conditions:
+          - "{{ flip_degrees == 90 and activated_face == 1}}"
         sequence:
           - choose:
               - conditions: "{{ from_face == 2 }}"
@@ -459,7 +573,6 @@ action:
                 sequence: !input "five_to_one"
               - conditions: "{{ from_face == 6 }}"
                 sequence: !input "six_to_one"
-      # ---------------------------- Flip 90 to side 2 ----------------------------
       - conditions:
           - "{{ flip_degrees == 90 and activated_face == 2 }}"
         sequence:
@@ -472,7 +585,6 @@ action:
                 sequence: !input "four_to_two"
               - conditions: "{{ from_face == 6 }}"
                 sequence: !input "six_to_two"
-      # ---------------------------- Flip 90 to side 3 ----------------------------
       - conditions:
           - "{{ flip_degrees == 90 and activated_face == 3 }}"
         sequence:
@@ -485,7 +597,6 @@ action:
                 sequence: !input "four_to_three"
               - conditions: "{{ from_face == 5 }}"
                 sequence: !input "five_to_three"
-      # ---------------------------- Flip 90 to side 4 ----------------------------
       - conditions:
           - "{{ flip_degrees == 90 and activated_face == 4 }}"
         sequence:
@@ -498,7 +609,6 @@ action:
                 sequence: !input "five_to_four"
               - conditions: "{{ from_face == 6 }}"
                 sequence: !input "six_to_four"
-      # ---------------------------- Flip 90 to side 5 ----------------------------
       - conditions:
           - "{{ flip_degrees == 90 and activated_face == 5 }}"
         sequence:
@@ -511,7 +621,6 @@ action:
                 sequence: !input "four_to_five"
               - conditions: "{{ from_face == 6 }}"
                 sequence: !input "six_to_five"
-      # ---------------------------- Flip 90 to side 6 ----------------------------
       - conditions:
           - "{{ flip_degrees == 90 and activated_face == 6 }}"
         sequence:
@@ -524,9 +633,8 @@ action:
                 sequence: !input "four_to_six"
               - conditions: "{{ from_face == 5 }}"
                 sequence: !input "five_to_six"
-      # ---------------------------- Flip 180 to side x ----------------------------
       - conditions:
-          - "{{ (value == flip180 + activated_face - 1) and not any_to_one}}"
+          - "{{ (value == flip180 + activated_face - 1)}}"
         sequence:
           - choose:
               - conditions: "{{ activated_face == 1 }}"
@@ -541,7 +649,6 @@ action:
                 sequence: !input "two_to_five"
               - conditions: "{{ activated_face == 6 }}"
                 sequence: !input "three_to_six"
-        # ---------------------------- Knock side x ----------------------------
       - conditions:
           - "{{ value == knock + activated_face - 1 }}"
         sequence:
@@ -558,7 +665,6 @@ action:
                 sequence: !input "five_to_five"
               - conditions: "{{ activated_face == 6 }}"
                 sequence: !input "six_to_six"
-      # ---------------------------- Slide side x ----------------------------
       - conditions:
           - "{{ value == slide + activated_face - 1 }}"
         sequence:
